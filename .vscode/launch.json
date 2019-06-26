@@ -1,0 +1,70 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindFirstNonRepeatedChar",
+            "request": "launch",
+            "mainClass": "FindFirstNonRepeatedChar"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StackXX",
+            "request": "launch",
+            "mainClass": "StackXX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveDuplicateChars",
+            "request": "launch",
+            "mainClass": "RemoveDuplicateChars"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveDuplicateFromArray",
+            "request": "launch",
+            "mainClass": "RemoveDuplicateFromArray"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FizzBuzz",
+            "request": "launch",
+            "mainClass": "FizzBuzz"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindMissingNumberInAnArray",
+            "request": "launch",
+            "mainClass": "FindMissingNumberInAnArray"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BubbleSort",
+            "request": "launch",
+            "mainClass": "BubbleSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Factorial",
+            "request": "launch",
+            "mainClass": "Factorial"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IntegerPalindrom",
+            "request": "launch",
+            "mainClass": "IntegerPalindrom"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringPalindrome",
+            "request": "launch",
+            "mainClass": "StringPalindrome"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeNumber",
+            "request": "launch",
+            "mainClass": "PrimeNumber"
+        }
+    ]
+}
