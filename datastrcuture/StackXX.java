@@ -1,66 +1,66 @@
 public class StackXX {
-	
-		int maxSize = 0;
-		String [] array;
-		int top = 0;
 
-		StackXX(int n) {
+	int maxSize = 0;
+	String[] array;
+	int top = 0;
 
-			this.maxSize = n;
-			array = new String [this.maxSize];
-			top = -1;
-		}
+	StackXX(int n) {
 
-		public String pop(){
+		this.maxSize = n;
+		array = new String[this.maxSize];
+		top = -1;
+	}
 
-			String s = array[top--];
-			
-			return s;
+	public String pop() {
 
-		}
+		String s = array[top--];
 
-		public String peek(){
+		return s;
 
-			String s = array[top];
-			return s;
-		}
+	}
 
-		public void push(String s){
+	public String peek() {
 
-			array[++top] = s;
-		}
+		String s = array[top];
+		return s;
+	}
 
-		public boolean isEmpty(){
+	public void push(String s) {
 
-			return top == -1;
-		}
+		array[++top] = s;
+	}
 
-		public boolean isFull(){
+	public boolean isEmpty() {
 
-			return top == maxSize-1;
-        }
-        
-        public int stackSize(){
+		return top == -1;
+	}
 
-            return top + 1;
-        }
+	public boolean isFull() {
 
-		public static void main(String [] args){
+		return top == maxSize - 1;
+	}
 
-			StackXX stack = new StackXX(5);
-            stack.push("Hello World");
-            stack.push("Add more stuff to Stack");
-            stack.push("item 3");
-            stack.push("item 4");
-            stack.push("item 5");
+	public int stackSize() {
 
-			
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-			System.out.println(stack.isFull());
-            System.out.println(stack.isEmpty());
-            System.out.println(stack.stackSize());
-		}
+		return top + 1;
+	}
+
+	public static void main(String[] args) {
+
+		StackXX stack = new StackXX(5);
+		stack.push("Hello World");
+		stack.push("Add more stuff to Stack");
+		stack.push("item 3");
+		stack.push("item 4");
+		stack.push("item 5");
+
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.isFull());
+		System.out.println(stack.isEmpty());
+		System.out.println(stack.stackSize());
+		System.out.println(stack.pop());
+	}
 
 }
