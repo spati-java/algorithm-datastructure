@@ -9,6 +9,10 @@ public class VowelCounter {
     }
 
     public static int countVowel(String text) {
+
+        if (null == text) {
+            return 0;
+        }
         int count = 0;
         char[] charArray = text.toLowerCase().toCharArray();
         for (char c : charArray) {
@@ -20,7 +24,7 @@ public class VowelCounter {
             case 'o':
             case 'u':
                 count++;
-            
+
             default:
             }
         }
