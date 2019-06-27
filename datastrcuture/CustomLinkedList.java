@@ -9,6 +9,7 @@ public class CustomLinkedList{
         if(head == null){
 
             head = new Node(data);
+            count = 1;
 
             return;
         }
@@ -20,7 +21,38 @@ public class CustomLinkedList{
         }
 
         current.next = new Node(data);
+    }
 
+    void prepaind(int data) {
+
+        Node newHead = new Node(data);
+
+        newHead.next = head;
+
+        head = newHead;
+    }
+
+    void deleteWithValue(int data){
+
+        if(head == null) return;
+
+        if(head.data == data){
+            head = head.next;
+            return;
+        }
+
+        Node current = head;
+
+        while(current.next != null){
+
+            if(current.next.data == data){
+
+                current.next = current.next.next;
+                return;
+            }
+            current = current.next;
+
+        }
     }
 
     int size(){
@@ -48,7 +80,12 @@ public class CustomLinkedList{
 
         CustomLinkedList linkedList = new CustomLinkedList();
         linkedList.append(5);
+        linkedList.append(6);
+        linkedList.append(7);
+        linkedList.deleteWithValue(5);
         System.out.println(linkedList.size());
+        System.out.println(linkedList.head.data);
+    
     }
 
 }
