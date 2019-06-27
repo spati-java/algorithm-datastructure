@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class CustomLinkedList{
 
     Node head;
@@ -55,6 +57,30 @@ public class CustomLinkedList{
         }
     }
 
+    void removeDuplicate( int data){
+
+        if (head.next == null){
+            return;
+        }
+        
+        HashSet<Node> set = new HashSet<Node>();
+
+        Node current = head;
+
+        while(current.next != null ){
+            
+            set.add(current);
+            current = current.next;
+            
+
+        }
+
+        for(Node n : set){
+            System.out.println(n.data);
+        }
+
+    }
+
     int size(){
 
         count = 1;
@@ -82,10 +108,8 @@ public class CustomLinkedList{
         linkedList.append(5);
         linkedList.append(6);
         linkedList.append(7);
-        linkedList.deleteWithValue(5);
-        System.out.println(linkedList.size());
-        System.out.println(linkedList.head.data);
-    
+        linkedList.append(7);
+        linkedList.removeDuplicate(7);
     }
 
 }
