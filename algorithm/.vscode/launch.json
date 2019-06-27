@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StringAnagramCheck",
+            "request": "launch",
+            "mainClass": "StringAnagramCheck"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - VowelCounter",
             "request": "launch",
             "mainClass": "VowelCounter"
