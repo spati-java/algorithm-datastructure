@@ -70,46 +70,66 @@ public class CustomLinkedList{
         while(current.next != null ){
             
             set.add(current);
-            current = current.next;
-            
-
+            current = current.next;            
         }
 
-        for(Node n : set){
+        for(Node n : set) {
+
             System.out.println(n.data);
         }
 
     }
 
-    int size(){
+    void deleteDupsWithNoBuffer(int data){
 
-        count = 1;
+        if(head == null) return;
 
-        if (head == null)
-            return 0;
-
-        if(head.next == null){
-            return count;
-        }
-       
         Node current = head;
 
-        while(current.next != null) {
+        while(current != null ){
+
+                Node runner = current;
+
+                while(runner.next != null){
+
+                        if(runner.next.data == current.data){
+
+                            runner.next = runner.next.next;
+
+                        }
+                        else runner = runner.next;
+                       
+                }
+             current = current.next;
+        }
+    }
+
+    int size(){
+
+        Node current = head;
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        while(current != null) {
+              list.add(current.data);
               current = current.next;
-              count ++;
+              
             }
                 
-        return count;
+        return list.size();
     }
 
     public static void main(String [] args){
 
         CustomLinkedList linkedList = new CustomLinkedList();
+
         linkedList.append(5);
         linkedList.append(6);
         linkedList.append(7);
         linkedList.append(7);
-        linkedList.removeDuplicate(7);
+        linkedList.deleteDupsWithNoBuffer(7);
+
+        System.out.println(linkedList.size());
     }
 
 }
