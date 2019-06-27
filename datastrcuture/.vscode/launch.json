@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CustomLinkedList",
+            "request": "launch",
+            "mainClass": "CustomLinkedList"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReverseArray",
+            "request": "launch",
+            "mainClass": "ReverseArray"
+        }
+    ]
+}
