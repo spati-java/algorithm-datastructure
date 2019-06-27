@@ -31,7 +31,7 @@ public class MergeTwoSortedArray {
 
     public static void main(String[] args) {
 
-        int ar1[] = { 1, 2, 3, 4, 5 };
+        int ar1[] = { 1, 2, 3, 3, 5 };
         int ar2[] = { 6, 7, 8, 9 };
 
         merge(ar1,ar2);
