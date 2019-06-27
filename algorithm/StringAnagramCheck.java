@@ -18,19 +18,10 @@ public class StringAnagramCheck {
 
         char[] text1Array = text1.toCharArray();
         char[] text2Array = text2.toCharArray();
+
         Arrays.sort(text1Array);
         Arrays.sort(text2Array);
 
-        String sortedStr1 = "";
-        String sortedStr2 = "";
-
-        for (char c : text1Array) {
-            sortedStr1 += c;
-        }
-        for (char c : text2Array) {
-            sortedStr2 += c;
-        }
-
-        return sortedStr1.equals(sortedStr2);
+        return Arrays.equals(text1Array, text2Array);
     }
 }
