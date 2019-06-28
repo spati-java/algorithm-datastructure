@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BinarySearchAlgorithm",
+            "request": "launch",
+            "mainClass": "BinarySearchAlgorithm",
+            "projectName": "datastrcuture_bfde1d84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ReturnKthSmallestelement",
             "request": "launch",
             "mainClass": "ReturnKthSmallestelement",

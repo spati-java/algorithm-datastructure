@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+import java.util.*;
 public class StringAnagramCheck {
 
     public static void main(String[] args) {
@@ -7,7 +7,9 @@ public class StringAnagramCheck {
     }
 
     public static boolean isAnagram(String text1, String text2) {
-
+    
+        System.out.print(stack.isEmpty());
+        
         if (text1 == null || text2 == null) {
             return false;
         }
